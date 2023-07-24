@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Legal Solution</title>
+    <link
+      rel="shortcut icon"
+      href="./images/Favicon/LegalFavicon.png"
+      type="image/x-icon"
+    />
 
     <!-- Google Font Garamond and Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,6 +17,12 @@
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600;800&family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/b213860ddd.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Tailwind and Daisy UI CDN -->
     <link
@@ -27,6 +38,11 @@
       }
       .poppins {
         font-family: "Poppins", sans-serif;
+      }
+
+      .banner {
+        background: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.267)),
+          url("./images/banner.png");
       }
     </style>
     <!-- Tailwind Customization -->
@@ -46,5 +62,82 @@
       };
     </script>
   </head>
-  <body></body>
+  <body>
+    <header class="max-w-7xl mx-auto px-5">
+      <!-- Nav Container -->
+      <nav
+        id="nav-bar"
+        class="px-5 md:px-0 mt-8 gap-5 lg:mt-10 flex flex-col items-center lg:justify-between lg:items-center lg:flex-row"
+      >
+        <!-- Nav logo -->
+        <div>
+          <a href="#"><img src="./images/logo2.png" alt="logo" /></a>
+        </div>
+        <!-- Nav Links -->
+        <div class="space-x-5">
+          <a href="#" class="text-secondary poppins">Home</a>
+          <a href="#" class="text-secondary poppins"
+            >Services
+            <i class="fa-solid fa-chevron-right ml-1 text-secondary"></i>
+          </a>
+          <a href="#" class="text-secondary poppins"
+            >Cases
+            <i class="fa-solid fa-chevron-right ml-1 text-secondary"></i>
+          </a>
+          <a href="#" class="text-secondary poppins"
+            >Blog
+            <i class="fa-solid fa-chevron-right ml-1 text-secondary"></i>
+          </a>
+          <a href="#" class="text-secondary poppins"
+            >Contact Us
+            <i class="fa-solid fa-chevron-right ml-1 text-secondary"></i>
+          </a>
+        </div>
+        <!--Nav Button -->
+        <div>
+          <button
+            class="px-7 py-3 bg-btn-bg border-none text-lg text-white normal-case rounded-lg hover:opacity-95 transition poppins"
+          >
+            Free Consultation
+          </button>
+        </div>
+      </nav>
+
+      <!-- Banner Sevtion -->
+      <div id="banner" class="mt-12">
+        <div
+          class="hero px-5 md:px-0 w-full h-[550px] flex flex-col justify-center items-center rounded-md banner bg-no-repeat bg-cover bg-center"
+        >
+          <div class="flex flex-col justify-center items-center text-center">
+            <h1
+              class="garamond text-5xl md:text-7xl text-white font-extrabold leading-[50px] md:leading-[85px] mb-6"
+            >
+              We Provide Effective <br />
+              Legal Solutions
+            </h1>
+            <p class="text-[#E7E7E7] md:max-w-[679px] poppins mb-8">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col md:flex-row justify-between items-center gap-6"
+          >
+            <input
+              class="placeholder:text-secondary max-w-[500px] px-7 py-3 rounded-md poppins focus:border-none focus:outline-none"
+              type="text"
+              placeholder="Search your services"
+            />
+            <button
+              class="px-7 py-3 bg-btn-bg border-none text-lg text-white normal-case rounded-lg hover:opacity-95 transition poppins primary"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
