@@ -51,11 +51,12 @@
         theme: {
           extend: {
             colors: {
-              primary: "#414040",
-              secondary: "#707070",
+              "primary-text": "#414040",
+              "secondary-text": "#707070",
               "footer-text": "#CFCFCF",
               "btn-text": "#A0A0A0",
               "btn-bg": "#B68C5A",
+              gray: "#E7E7E7",
             },
           },
         },
@@ -74,23 +75,23 @@
           <a href="#"><img src="./images/logo2.png" alt="logo" /></a>
         </div>
         <!-- Nav Links -->
-        <div class="space-x-5">
-          <a href="#" class="text-secondary poppins">Home</a>
-          <a href="#" class="text-secondary poppins"
+        <div class="space-x-5 text-center">
+          <a href="#" class="text-secondary-text poppins">Home</a>
+          <a href="#" class="text-secondary-text poppins"
             >Services
-            <i class="fa-solid fa-chevron-right ml-1 text-secondary"></i>
+            <i class="fa-solid fa-chevron-right ml-1 text-secondary-text"></i>
           </a>
-          <a href="#" class="text-secondary poppins"
+          <a href="#" class="text-secondary-text poppins"
             >Cases
-            <i class="fa-solid fa-chevron-right ml-1 text-secondary"></i>
+            <i class="fa-solid fa-chevron-right ml-1 text-secondary-text"></i>
           </a>
-          <a href="#" class="text-secondary poppins"
+          <a href="#" class="text-secondary-text poppins"
             >Blog
-            <i class="fa-solid fa-chevron-right ml-1 text-secondary"></i>
+            <i class="fa-solid fa-chevron-right ml-1 text-secondary-text"></i>
           </a>
-          <a href="#" class="text-secondary poppins"
+          <a href="#" class="text-secondary-text poppins"
             >Contact Us
-            <i class="fa-solid fa-chevron-right ml-1 text-secondary"></i>
+            <i class="fa-solid fa-chevron-right ml-1 text-secondary-text"></i>
           </a>
         </div>
         <!--Nav Button -->
@@ -139,5 +140,102 @@
         </div>
       </div>
     </header>
+
+    <main class="max-w-7xl mx-auto px-5 poppins">
+      <section id="legal-practice" class="px-5 md:px-0 mt-28">
+        <!-- Section Text Content -->
+        <div class="text-center space-y-6">
+          <h1 class="garamond text-4xl text-primary-text font-extrabold">
+            The Legal Practice Area
+          </h1>
+          <p class="max-w-[740px] mx-auto text-secondary-text leading-7">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour.
+          </p>
+        </div>
+        <!-- Grid Card Container -->
+        <div class="grid grid-cols-1 md:grid-cols-3 mt-16">
+          <!-- Card One -->
+          <div
+            class="flex flex-col items-center text-center px-6 py-8 md:px-16 md:py-14 space-y-7 border-b-2 border-gray md:border-r-2 md:border-b-2 md:border-gray"
+          >
+            <img src="./images/business.png" alt="" />
+            <h1 class="garamond text-primary-text text-3xl">Business Law</h1>
+            <p class="text-secondary-text">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <img src="./images/Frame.png" alt="" />
+          </div>
+          <!-- Card Two -->
+          <div
+            class="flex flex-col items-center text-center px-6 py-8 md:px-16 md:py-14 space-y-7 border-b-2 border-gray md:border-b-2 md:border-gray"
+          >
+            <img src="./images/criminal.png" alt="" />
+            <h1 class="garamond text-primary-text text-3xl">Criminal Law</h1>
+            <p class="text-secondary-text">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <img src="./images/Frame.png" alt="" />
+          </div>
+          <!-- Card Three -->
+          <div
+            class="flex flex-col items-center text-center px-6 py-8 md:px-16 md:py-14 space-y-7 border-b-2 border-gray md:border-gray md:border-b-2 md:border-l-2 md:border-gray"
+          >
+            <img src="./images/child.png" alt="" />
+            <h1 class="garamond text-primary-text text-3xl">Child Support</h1>
+            <p class="text-secondary-text">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <img src="./images/Frame.png" alt="" />
+          </div>
+          <!-- Card Four -->
+          <div
+            class="flex flex-col items-center text-center px-6 py-8 md:px-16 md:py-14 space-y-7 border-b-2 border-gray md:border-r-2 md:border-gray"
+          >
+            <img src="./images/education.png" alt="" />
+            <h1 class="garamond text-primary-text text-3xl">Education Law</h1>
+            <p class="text-secondary-text">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <img src="./images/Frame.png" alt="" />
+          </div>
+          <!-- Card Five -->
+          <div
+            class="flex flex-col items-center text-center px-6 py-8 md:px-16 md:py-14 space-y-7 border-b-2 border-gray"
+          >
+            <img src="./images/divorce.png" alt="" />
+            <h1 class="garamond text-primary-text text-3xl">Divorce Law</h1>
+            <p class="text-secondary-text">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <img src="./images/Frame.png" alt="" />
+          </div>
+          <!-- Card Six -->
+          <div
+            class="flex flex-col items-center text-center px-6 py-8 md:px-16 md:py-14 space-y-7 border-b-2 border-gray md:border-l-2 md:border-gray"
+          >
+            <img src="./images/tax.png" alt="" />
+            <h1 class="garamond text-primary-text text-3xl">Tax Law</h1>
+            <p class="text-secondary-text">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <img src="./images/Frame.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
